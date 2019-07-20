@@ -6,7 +6,8 @@ import (
 )
 
 func main() {
-	g := gin.New()
+	g := gin.Default()
 
-	http.ListenAndServe("localhost:8080",g)
+	//g.Run("localhost:8080")
+	http.ListenAndServe("localhost:8080", g)
 }
